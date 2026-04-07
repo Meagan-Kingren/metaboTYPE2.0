@@ -31,6 +31,13 @@ reference:
       - calc_feeding_events
       - filter_feeding_events
 
+  - title: "Package overview"
+    contents:
+      - metaboTYPE-package
+  - title: "Your other section"
+    contents:
+      - your_other_functions
+
 footer:
   structure:
     left: developed_by
