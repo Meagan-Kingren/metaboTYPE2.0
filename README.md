@@ -3,7 +3,7 @@ Welcome to metaboTYPE!
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# metaboTYPE2.0
+# metaboTYPE
 
 <!-- badges: start -->
 
