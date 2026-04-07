@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+type: software
+title: metaboTYPE
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+authors:
+  - family-names: Kingren
+    given-names: Meagan
+    email: drkingren@gmail.com
+version: 0.0.0.9
+date-released: '2026-04-07'
+repository-code: 'https://github.com/Meagan-Kingren/metaboTYPE'
+url: 'https://meagan-kingren.github.io/metaboTYPE/'
+bug-reports: 'https://github.com/Meagan-Kingren/metaboTYPE/issues'
+license: GPL-3.0
+abstract: >-
+  metaboTYPE allows users to align multiple runs of indirect
+  calorimetry data with different starting points and
+  quickly analyze and visualize the data for further
+  analysis.
+keywords:
+  - calorimetry
+  - metabolic-analysis
+  - data-visualization
