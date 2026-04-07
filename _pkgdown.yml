@@ -23,7 +23,6 @@ reference:
       - align_to_common_time
       - align_to_photoperiod
       - create_photoperiods
-      - get_columns
       - summarize_subjects
       - add_exp_time
       - clean_PedMeters
@@ -31,12 +30,12 @@ reference:
       - calc_feeding_events
       - filter_feeding_events
 
-  - title: "Package overview"
+  - title: Other functions
+    desc: Remaining functions this package contains
     contents:
-      - metaboTYPE-package
-  - title: "Your other section"
-    contents:
-      - your_other_functions
+      - get_columns
+      - sem
+      - stdev
 
 footer:
   structure:
