@@ -15,7 +15,6 @@ permissions: read-all
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
-    # Only restrict concurrency for non-PR jobs
     concurrency:
       group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
     env:
@@ -25,38 +24,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: r-lib/actions/setup-pandoc@v2
+
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-pandoc@v2
-
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::pkgdown, any::devtools, local::.
+          extra-packages: any::pkgdown, local::.
           needs: website
-          upgrade: 'TRUE'
-
-      - name: Install devtools explicitly
-        run: |
-<<<<<<< HEAD
-          if (!require("devtools", quietly = TRUE)) {
-            install.packages("devtools", repos = "https://packagemanager.posit.co/cran/__linux__/noble/latest")
-=======
-<<<<<<< HEAD
-          if (!require("devtools", quietly = TRUE)) {
-            install.packages("devtools", repos = "https://packagemanager.posit.co/cran/__linux__/noble/latest")
-=======
-          options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/latest"))
-          if (!require("devtools", quietly = TRUE)) {
-            install.packages("devtools", dependencies = TRUE)
-          }
-          if (!require("devtools", quietly = TRUE)) {
-            stop("Failed to install devtools")
->>>>>>> 00eb9bc (updated .yaml file in github workflow)
->>>>>>> b2f9031 (updated .yaml file in github workflow)
-          }
-        shell: Rscript {0}
 
       - name: Build site
         run: pkgdown::build_site_github_pages(new_process = FALSE, install = FALSE)
