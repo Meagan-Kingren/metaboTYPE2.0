@@ -7,8 +7,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' all_cols <- get_columns(df1)
-#'
+#'}
 
 get_columns <- function(dataset,
                         exclude = NULL) {    # optional columns to exclude

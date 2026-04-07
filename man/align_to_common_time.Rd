@@ -30,11 +30,13 @@ A new dataframe with all subjects starting at the same date/time
 Align a dataframe to a common start date and time
 }
 \examples{
-# 1. Import the data, forcing DateTime to read as plain text
-data1 <- read_csv("TimeSeries1.csv", col_types = cols(DateTime = col_character()))
-# 2. Create a proper POSIXct Date column from the DateTime string
-data1 <- data1 \%>\% mutate(Date = as.POSIXct(DateTime, format = "\%Y/\%m/\%d \%H:\%M:\%S", tz = "America/Chicago"))
-# 3. Run the alignment function
-data1_filt <- align_to_common_time(dataset = data1, subject_var = Animal, datetime_var = Date, cutoff_datetime = "2023/06/27 07:30:02", timezone = "America/Chicago")
-
+\dontrun{
+data1_filt <- align_to_common_time(
+  dataset = data1,
+  subject_var = Animal,
+  datetime_var = Date,
+  cutoff_datetime = "2023/06/27 07:30:02",
+  timezone = "America/Chicago"
+)
+}
 }

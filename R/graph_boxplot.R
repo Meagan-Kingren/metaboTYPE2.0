@@ -18,9 +18,14 @@
 #' @export
 #'
 #' @examples
-#' plots <- graph_boxplot(dataset = summary_df2,group_var= group, columns_to_plot = cols, subject_var = subject.id)
-#'
-#'
+#' \dontrun{
+#' plots <- graph_boxplot(
+#'   dataset = summary_df2,
+#'   group_var = group,
+#'   columns_to_plot = cols,
+#'   subject_var = subject.id
+#' )
+#' }
 
 graph_boxplot<- function(dataset,
                    group_var,

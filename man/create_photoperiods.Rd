@@ -27,7 +27,8 @@ dataframe with additional column for Light or Dark period
 Create photoperiod columns for better graphing purposes
 }
 \examples{
+\dontrun{
 df2 <- create_photoperiods(df1_filtered)
-
+}
 
 }

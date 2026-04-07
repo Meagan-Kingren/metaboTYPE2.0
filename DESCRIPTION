@@ -13,3 +13,9 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://github.com/Meagan-Kingren/metaboTYPE2.0, https://meagan-kingren.github.io/metaboTYPE2.0/
 BugReports: https://github.com/Meagan-Kingren/metaboTYPE2.0/issues
+Imports:
+    dplyr,
+    ggplot2,
+    rlang,
+    tidyr,
+    stats

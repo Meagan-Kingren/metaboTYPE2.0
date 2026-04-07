@@ -18,6 +18,7 @@ column names as a value
 Get all column names in a dataframe
 }
 \examples{
+\dontrun{
 all_cols <- get_columns(df1)
-
+}
 }

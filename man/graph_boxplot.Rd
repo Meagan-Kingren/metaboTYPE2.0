@@ -44,7 +44,12 @@ You can choose to do this from photoperiod data or from general summary data.
 This will allow you to compare light and dark cycles as well as parameters during each.
 }
 \examples{
-plots <- graph_boxplot(dataset = summary_df2,group_var= group, columns_to_plot = cols, subject_var = subject.id)
-
-
+\dontrun{
+plots <- graph_boxplot(
+  dataset = summary_df2,
+  group_var = group,
+  columns_to_plot = cols,
+  subject_var = subject.id
+)
+}
 }

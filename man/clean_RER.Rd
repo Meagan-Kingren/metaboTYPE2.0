@@ -22,6 +22,8 @@ dataframe with cleaned RER data (NAs where values were outside params)
 This is helpful to filter out torpor events. Relax thresholds if you know you're sending a mouse into ketogenesis
 }
 \examples{
+\dontrun{
 df1_filtered <- clean_RER(df1_filtered)
+}
 
 }

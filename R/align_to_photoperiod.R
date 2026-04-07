@@ -12,13 +12,15 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' # Using defaults
+#' photoperiod_data1 <- align_to_photoperiod(dataset = data1, subject_var = Animal,
+#'   datetime_var = Date)
 #'
-#' Using defaults
-#' photoperiod_data1 <- align_to_photoperiod(dataset = data1, subject_var  = Animal, datetime_var = Date)
-
-# Overriding defaults
-#' photoperiod_data1 <- align_to_photoperiod(dataset = data1, subject_var  = Animal,  datetime_var = Date,  lights_on    = "06:00:00",  lights_off   = "18:00:00")
-#'
+#' # Overriding defaults
+#' photoperiod_data1 <- align_to_photoperiod(dataset = data1, subject_var = Animal,
+#'   datetime_var = Date, lights_on = "06:00:00", lights_off = "18:00:00")
+#'   }
 
 align_to_photoperiod <- function(dataset,
                                  subject_var,

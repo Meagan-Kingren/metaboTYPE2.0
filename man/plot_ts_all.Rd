@@ -30,7 +30,7 @@ plot_ts_all(
 
 \item{output_dir}{creates a new directory to save plots in}
 
-\item{...}{}
+\item{...}{Additional arguments passed to \code{plot_ts}}
 }
 \value{
 graphs for every single column or every defined column
@@ -39,7 +39,10 @@ graphs for every single column or every defined column
 Plot all numeric columns in a dataframe
 }
 \examples{
-#' all_plots <- plot_ts_all(dataset = df1, time_var = exp.hour, group_var = group, save_plots = TRUE)
-
-
+\dontrun{
+plots<- plot_ts_all(dataset = df1,
+  time_var = exp.hour,
+  group_var = group,
+  save_plots = TRUE)
+}
 }

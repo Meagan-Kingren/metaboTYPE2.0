@@ -7,15 +7,19 @@
 #' @param exclude columns to skip in a dataframe
 #' @param save_plots select TRUE to save plots
 #' @param output_dir creates a new directory to save plots in
-#' @param ...
+#' @param ... Additional arguments passed to \code{plot_ts}
 #'
 #' @returns graphs for every single column or every defined column
 #' @export
 #'
 #' @examples
-#' #' all_plots <- plot_ts_all(dataset = df1, time_var = exp.hour, group_var = group, save_plots = TRUE)
-#'
-#'
+#' \dontrun{
+#' plots<- plot_ts_all(dataset = df1,
+#'   time_var = exp.hour,
+#'   group_var = group,
+#'   save_plots = TRUE)
+#' }
+
 
 plot_ts_all <- function(dataset,
                              time_var,

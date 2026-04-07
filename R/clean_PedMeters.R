@@ -10,8 +10,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' df1_filtered <- clean_PedMeters(df1_filtered)
-#'
+#'}
 #'
 
 clean_PedMeters <- function(df,

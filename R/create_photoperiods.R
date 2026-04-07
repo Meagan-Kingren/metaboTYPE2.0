@@ -9,8 +9,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' df2 <- create_photoperiods(df1_filtered)
-#'
+#'}
 #'
 
 create_photoperiods <- function(df,

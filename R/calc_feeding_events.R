@@ -12,14 +12,14 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' df1 <- calc_feeding_events(df1)
-#'
+#'}
 
 calc_feeding_events <- function(df,
                                 id_col = "subject.id",
                                 time_col = "exp.hour",
                                 cumsum_col = "FoodInA_M") {
-  library(dplyr)
 
   df <- df %>%
     group_by(across(all_of(id_col))) %>%

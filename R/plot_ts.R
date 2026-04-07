@@ -16,8 +16,16 @@
 #' @export
 #'
 #' @examples
-#' plot_ts( dataset = df1, time_var = exp.hour, y_var = kcal_hr_M, group_var = group, title = "Energy Expenditure", ylab = "EE (kcal/hr)" )
-#'
+#' \dontrun{
+#' plot_ts(
+#'   dataset = df1,
+#'   time_var = exp.hour,
+#'   y_var = kcal_hr_M,
+#'   group_var = group,
+#'   title = "Energy Expenditure",
+#'   ylab = "EE (kcal/hr)"
+#' )
+#' }
 
 plot_ts <- function(dataset, time_var, y_var, group_var,
                     title = NULL,

@@ -48,6 +48,14 @@ time series graph with dark cycle shaded
 Basic time series graph
 }
 \examples{
-plot_ts( dataset = df1, time_var = exp.hour, y_var = kcal_hr_M, group_var = group, title = "Energy Expenditure", ylab = "EE (kcal/hr)" )
-
+\dontrun{
+plot_ts(
+  dataset = df1,
+  time_var = exp.hour,
+  y_var = kcal_hr_M,
+  group_var = group,
+  title = "Energy Expenditure",
+  ylab = "EE (kcal/hr)"
+)
+}
 }

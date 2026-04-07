@@ -10,8 +10,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' df1_filtered <- filter_feeding_events(df1_filtered)
-#'
+#'}
 #'
 #'
 

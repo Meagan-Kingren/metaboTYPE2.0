@@ -30,8 +30,9 @@ cleaned dataframe with excessive feeding events filtered out and a new cumsum co
 Title
 }
 \examples{
+\dontrun{
 df1_filtered <- filter_feeding_events(df1_filtered)
-
+}
 
 
 }

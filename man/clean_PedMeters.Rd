@@ -30,7 +30,8 @@ cleaned dataframe with NAs where excessively large events were
 Filter excessively large running events out
 }
 \examples{
+\dontrun{
 df1_filtered <- clean_PedMeters(df1_filtered)
-
+}
 
 }

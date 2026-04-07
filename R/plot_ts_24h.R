@@ -16,8 +16,19 @@
 #' @export
 #'
 #' @examples
-#' plot_ts_24h( dataset = df1,time_var = exp.hour, y_var = kcal_hr_M, group_var = group, title = "Energy Expenditure with Light/Dark Cycle", ylab = "EE (kcal/hr)", shaded_days = 21, shaded_width = 12, shaded_fill = "grey80", shaded_alpha = 0.5)
-#'
+#' \dontrun{
+#' plots<- plot_ts_24h(dataset = df1,
+#' time_var = exp.hour,
+#'  y_var = kcal_hr_M,
+#'  group_var = group,
+#'  title = "Energy Expenditure
+#'  with Light/Dark Cycle",
+#'  ylab = "EE (kcal/hr)",
+#'  shaded_days = 21,
+#'  shaded_width = 12,
+#'  shaded_fill = "grey80",
+#'  shaded_alpha = 0.5)
+#'}
 
 plot_ts_24h <- function(dataset, time_var, y_var, group_var,
                         title = NULL,

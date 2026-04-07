@@ -28,6 +28,7 @@ This function rezeroes the data since we trimmed timepoints earlier.
 Then it calculates each feeding event, with the amount eaten during the hour displayed.
 }
 \examples{
+\dontrun{
 df1 <- calc_feeding_events(df1)
-
+}
 }

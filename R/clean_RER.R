@@ -11,7 +11,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' df1_filtered <- clean_RER(df1_filtered)
+#'}
 #'
 clean_RER <- function(df,
                       rer_col = "RER_M",
