@@ -2,7 +2,7 @@ url: https://meagan-kingren.github.io/metaboTYPE2.0/
 template:
   bootstrap: 5
   bslib:
-    bootswatch: zephyr
+    bootswatch: superhero
     primary: "#c70000"
     base_font: {google: "Outfit"}
     code_font: {google: "Fira Code"}
