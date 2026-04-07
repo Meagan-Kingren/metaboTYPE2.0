@@ -3,6 +3,8 @@ template:
   bootstrap: 5
   bslib:
     bootswatch: morph
+    base_font: {google: "Outfit"}
+    code_font: "Fira Code"
   light-switch: true
 
 

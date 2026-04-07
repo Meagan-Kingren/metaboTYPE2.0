@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 # metaboTYPE2.0
 
 <!-- badges: start -->
-<img src="man/figures/logo.png" align="right" height="139" />
+# metaboTYPE2.0 <a href="https://meagan-kingren.github.io/metaboTYPE2.0/"><img src="man/figures/logo.png" align="right" height="122" alt="metaboTYPE2.0 website" /></a>
 <!-- badges: end -->
 
 The goal of metaboTYPE2.0 is to ...
