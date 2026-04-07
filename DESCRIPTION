@@ -18,4 +18,5 @@ Imports:
     ggplot2,
     rlang,
     tidyr,
-    stats
+    stats,
+    devtools
