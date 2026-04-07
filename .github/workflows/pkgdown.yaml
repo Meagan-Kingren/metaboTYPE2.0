@@ -35,11 +35,26 @@ jobs:
         with:
           extra-packages: any::pkgdown, any::devtools, local::.
           needs: website
+          upgrade: 'TRUE'
 
       - name: Install devtools explicitly
         run: |
+<<<<<<< HEAD
           if (!require("devtools", quietly = TRUE)) {
             install.packages("devtools", repos = "https://packagemanager.posit.co/cran/__linux__/noble/latest")
+=======
+<<<<<<< HEAD
+          if (!require("devtools", quietly = TRUE)) {
+            install.packages("devtools", repos = "https://packagemanager.posit.co/cran/__linux__/noble/latest")
+=======
+          options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/noble/latest"))
+          if (!require("devtools", quietly = TRUE)) {
+            install.packages("devtools", dependencies = TRUE)
+          }
+          if (!require("devtools", quietly = TRUE)) {
+            stop("Failed to install devtools")
+>>>>>>> 00eb9bc (updated .yaml file in github workflow)
+>>>>>>> b2f9031 (updated .yaml file in github workflow)
           }
         shell: Rscript {0}
 

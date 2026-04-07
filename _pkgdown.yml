@@ -9,3 +9,26 @@ template:
   light-switch: true
   theme: atom-one-light
   theme-dark: atom-one-dark
+
+reference:
+  - title: Functions that graph things
+    desc: These functions will all graph data.
+    contents:
+      - plot_ts
+      - plot_ts_24h
+      - plot_ts_all
+      - graph_boxplot
+
+  - title: Functions that organize data
+    desc: These functions will all arrange and clean data.
+    contents:
+      - align_to_common_time
+      - align_to_photoperiod
+      - get_columns
+      - summarize_subjects
+      - add_exp_time
+      - clean_PedMeters
+      - clean_RER
+      - calc_feeding_events
+      - filter_feeding_events
+
